@@ -23,3 +23,25 @@ import_file = "allow_list.txt"
 
 with open(import_file, "r") as file:
     ip_addresses = file.read()
+## 📖 Step 2: Read the File Contents
+```python
+ip_addresses = file.read()
+
+## 🪢 Step 3: Convert the String Into a List
+```python
+ip_addresses = ip_addresses.split()
+
+## 🔁 Step 4: Iterate Through the Remove List
+```python
+for element in remove_list:
+
+## ❌ Step 5: Remove Restricted IP Addresses
+```python
+if element in ip_addresses:
+    ip_addresses.remove(element)
+## 💾 Step 6: Update the File
+```python
+updated_list = "\n".join(ip_addresses)
+
+with open(import_file, "w") as file:
+    file.write(updated_list)
