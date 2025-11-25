@@ -17,10 +17,12 @@ As a security professional at a healthcare company, I was responsible for mainta
 
 ---
 
-## 🔓 Step 1: Open the Allow List File
+## Following Steps
 ```python
 import_file = "allow_list.txt"
-
+Step 1: Open the Allow List File
+```python
+import_file = "allow_list.txt"
 with open(import_file, "r") as file:
     ip_addresses = file.read()
 ## 📖 Step 2: Read the File Contents
